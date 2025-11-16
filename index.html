@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/logoApp.png" />
+    <title>Menú Inicial</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-clifford: #da373d;
+        }
+
+        body{
+            margin-top: 15px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="text-center text-5xl font-semibold">Prueba Técnica para Estadía</h1>
+        <br>
+    
+        <div class="mx-auto max-w-md overflow-hidden rounded-xl bg-white shadow-md md:max-w-2xl">
+            <div class="md:flex">
+                <div class="md:shrink-0">
+                    <img class="h-48 w-full object-cover md:h-full md:w-48" src="img/pantallaVistaImagen.jpeg" alt="" />
+                </div>
+                <div class="p-8 flex flex-col justify-center">
+                    <div class="text-4xl font-semibold tracking-wide text-green-500 uppercase">Pantalla 1</div>
+                    <a href="screens/screenUno.html"
+                        class="mt-1 block text-3xl leading-tight font-medium text-black hover:underline">
+                        Vista imagen
+                    </a>
+                    <p class="mt-2 text-gray-500 text-2xl">
+                        Toque el texto "Vista imagen" para ingresar al diseño
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="mx-auto max-w-md overflow-hidden rounded-xl bg-white shadow-md md:max-w-2xl">
+            <div class="md:flex">
+                <div class="md:shrink-0">
+                    <img class="h-48 w-full object-cover md:h-full md:w-48" src="img/pantallaAjustes.jpeg" alt="" />
+                </div>
+                <div class="p-8 flex flex-col justify-center">
+                    <div class="text-4xl font-semibold tracking-wide text-green-500 uppercase">Pantalla 2</div>
+                    <a href="screens/screenDos.html"
+                        class="mt-1 block text-3xl leading-tight font-medium text-black hover:underline">
+                        Ajustes
+                    </a>
+                    <p class="mt-2 text-gray-500 text-2xl">
+                        Toque el texto "Ajustes" para ingresar al diseño
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

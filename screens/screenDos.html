@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logoApp.png" />
+    <title>Ajustes</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-regal-blue: #FFFFFF; 
+        }
+
+        body {
+            background-color: #121e1a;
+        }
+
+        .textColor {
+            color: #00a481;
+        }
+        /* body{
+            margin-top: 15px;
+            margin-left: 20px;
+            margin-right: 20px;
+        } */
+    </style>
+</head>
+
+<body class="m-0 p-0">
+    <div class="flex items-left justify-left">
+        <div class="mx-5 my-5 flex justify-between">
+            <div class="flex space-x-6">
+                <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    stroke="#ffffff">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M5 12H19M5 12L11 6M5 12L11 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </g>
+                </svg>
+                <p class="text-white dark:text-white text-4xl">Ajustes</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="border-b-1 border-gray-700"></div>
+
+    <div class="mx-5 my-5">
+        <p class="textColor dark:textColor text-xl">General</p>
+    </div>
+
+    <div class="mx-5 my-8">
+        <p class="text-white dark:text-white text-xl">Cambiar formato de fecha y hora</p>
+    </div>
+
+    <div class="mx-5 my-8">
+        <p class="text-white dark:text-white text-xl">Gestionar carpetas incluidas (Sin autorización)</p>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Mostrar elementos ocultos (Sin autorización)</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Buscar todos los archivos en lugar de carpetas en la pantalla de
+            inicio</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="border-b-1 border-gray-700"></div>
+
+    <div class="mx-5 my-5">
+        <p class="textColor dark:textColor text-xl">Videos</p>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Reproducir videos automáticamente</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Recordar la última posición de avance en la reproducción de video</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Repetir reproducción de videos en bucle</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Abrir videos en una pantalla separada con nuevos gestos horizontales</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Permetir controlar el volumen y el brillo del video con gestos verticales</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" checked>
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="border-b-1 border-gray-700"></div>
+
+    <div class="mx-5 my-5">
+        <p class="textColor dark:textColor text-xl">Miniaturas</p>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Recortar miniaturas en cuadrados</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" checked>
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Animar las miniaturas de GIFs</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="mx-5 my-8">
+        <p class="text-white dark:text-white text-xl">Estilo de la miniaturas de los archivos</p>
+    </div>
+
+    <div class="mx-5 my-8">
+        <p class="text-white dark:text-white text-xl">Estilo de las miniaturas de las carpetas</p>
+        <p class="text-gray-500 text-xl">Cuadrado</p>
+    </div>
+
+    <div class="border-b-1 border-gray-700"></div>
+
+    <div class="mx-5 my-5">
+        <p class="textColor dark:textColor text-xl">Desplazamiento</p>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Desplazar miniaturas horizontales</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Habilitar tirar desde la parte superior para refrescar</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" checked>
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="border-b-1 border-gray-700"></div>
+
+    <div class="mx-5 my-5">
+        <p class="textColor dark:textColor text-xl">Medios a pantalla completa</p>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Incrementar el brillo de la pantalla al máximo cuando se muentran los archivos multimedia</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Fondo y barra de estado completamente oscuros en medios al estar en pantalla completa</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" checked>
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Ocultar la interfaz del sistema en pantalla completa</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Desplazarse en los medios haciendo clic en los lados de la pantalla</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Mantener la pantalla encendida al ver fotos en pantalla completa</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" checked>
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Permitir controlar el brillo en las fotos con gestos verticales</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Permitir cerrar la vista de pantalla completa con un gesto hacia abajo</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" checked>
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Mostrar una muesca si está disponible</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" checked>
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="mx-5 my-8">
+        <p class="text-white dark:text-white text-xl">Rotar multimedia en la pantalla completa según</p>
+        <p class="text-gray-500 text-xl">Configuración del sistema</p>
+    </div>
+
+    <div class="border-b-1 border-gray-700"></div>
+
+    <div class="mx-5 my-5">
+        <p class="textColor dark:textColor text-xl">Imágenes ampliables con zoom</p>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Permitir zoom profundo</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" checked>
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Permitir girar con gestos</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" checked>
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Mostrar imágenes con la mayor calidad posible</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Permitir zoom 1:1 con un toque doble</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="border-b-1 border-gray-700"></div>
+
+    <div class="mx-5 my-5">
+        <p class="textColor dark:textColor text-xl">Detalles ampliados</p>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Mostrar información de los archivos en pantalla completa</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="border-b-1 border-gray-700"></div>
+
+    <div class="mx-5 my-5">
+        <p class="textColor dark:textColor text-xl">Seguridad</p>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Contraseñas para proteger toda la aplicación</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="border-b-1 border-gray-700"></div>
+
+    <div class="mx-5 my-5">
+        <p class="textColor dark:textColor text-xl">Operaciones con ficheros</p>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Eliminar carpetas vacías después de borrar su contenido</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Mantener el último valor modificado por última vez en las operaciones de archivo</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" checked>
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Omitir siempre el diálogo de confirmación de eliminación</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="border-b-1 border-gray-700"></div>
+
+    <div class="mx-5 my-5">
+        <p class="textColor dark:textColor text-xl">Acciones en la parte inferior</p>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Mostrar botones de acción en la parte inferior de la pantalla</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" checked>
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="mx-5 my-8">
+        <p class="text-white dark:text-white text-xl">Administrar los botones de la parte inferior</p>
+    </div>
+
+    <div class="border-b-1 border-gray-700"></div>
+
+    <div class="mx-5 my-5">
+        <p class="textColor dark:textColor text-xl">Papelera de reciclaje</p>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Mover los elementos en la papelera de reciclaje en lugar de eliminar</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" checked>
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Mostrar la papelera de reciclaje en la pantalla de carpetas</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer" checked>
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="mx-5 my-8 flex justify-between items-center">
+        <div class="flex space-x-6">
+            <p class="text-white dark:text-white text-xl">Mostrar la papelera de reciclaje como último elemento en la pantalla principal</p>
+        </div>
+
+        <div class="flex space-x-10">
+            <label class="inline-flex items-center me-5 cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div
+                    class="relative w-11 h-6 bg-neutral-quaternary rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-green-300 dark:peer-focus:ring-green-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600 dark:peer-checked:bg-green-600">
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="mx-5 my-8">
+        <p class="text-white dark:text-white text-xl">Vaciar papelera de reciclaje</p>
+        <p class="text-gray-500 text-xl">0 B</p>
+    </div>
+
+    <div class="border-b-1 border-gray-700"></div>
+
+    <div class="mx-5 my-5">
+        <p class="textColor dark:textColor text-xl">Migrando</p>
+    </div>
+
+    <div class="mx-5 my-8">
+        <p class="text-white dark:text-white text-xl">Limpiar cache</p>
+        <p class="text-gray-500 text-xl">14.5 MB</p>
+    </div>
+
+    <div class="mx-5 my-8">
+        <p class="text-white dark:text-white text-xl">Exportar los favoritos</p>
+    </div>
+
+    <div class="mx-5 my-8">
+        <p class="text-white dark:text-white text-xl">Importar los favoritos</p>
+    </div>
+
+    <div class="mx-5 my-8">
+        <p class="text-white dark:text-white text-xl">Exportar ajustes</p>
+    </div>
+
+    <div class="mx-5 my-8">
+        <p class="text-white dark:text-white text-xl">Importar ajustes</p>
+    </div>
+
+    <div class="mx-5 my-8">
+        <p class="text-white dark:text-white text-xl">App Version: 6813ddbc.00</p>
+    </div>
+</body>
+
+</html>
